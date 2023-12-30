@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header role="heading">
+        <h1>My Portfolio</h1>
+    </header>
 
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" role="heading">
+            <h2>About Me</h2>
+            <img src="profile-picture.jpg" alt="Profile Picture" role="img">
+            <p>I am a passionate web developer who loves creating accessible and user-friendly websites.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1 - Description</li>
+                <li role="listitem">Project 2 - Description</li>
+                <li role="listitem">Project 3 - Description</li>
+            </ul>
+        </section>
+
+        <section id="contact" role="heading">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me at example@email.com</p>
+        </section>
+    </main>
 </body>
 
 </html>
